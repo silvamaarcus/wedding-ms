@@ -1,0 +1,162 @@
+header {
+  width: 100%;
+  height: 80px;
+
+  // fazer com que o Menu fique fixo na tela, indenpendente do Scroll
+  position: fixed;
+  // fazer com que o Menu fique a frente de todos os elementos
+  z-index: 0;
+
+  @include responsive(s) {
+    background-color: $white-light;
+  }
+}
+
+.menu {
+  padding: 40px 0;
+
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+
+  @include responsive(s) {
+    display: none;
+  }
+}
+
+.bx {
+  display: none;
+
+  position: relative;
+
+  width: 32px;
+  height: 24px;
+
+  cursor: pointer;
+
+  .bx-top,
+  .bx-center,
+  .bx-bottom {
+    background-color: $secondary-500;
+    width: 100%;
+    height: 4px;
+
+    transition: transform 0.3s ease;
+  }
+
+  .bx-center {
+    margin: 4px 0;
+  }
+
+  &:hover {
+    .bx-top {
+      transform: translateY(-4px);
+    }
+
+    .bx-bottom {
+      transform: translateY(4px);
+    }
+  }
+
+  @include responsive(s) {
+    display: block;
+  }
+}
+.bx.active {
+  .bx-top,
+  .bx-center,
+  .bx-bottom {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+
+    width: 70%;
+    height: 4px;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%) rotate(135deg); // girar o tracinho em 135°
+    // centralizar os eixos x e y
+    top: 50%;
+    left: 50%;
+    // transição para tracinho virar 'x'
+    transition: 0.3s ease;
+
+    background-color: $secondary-500;
+  }
+  &::before {
+    content: "";
+    display: block;
+
+    width: 70%;
+    height: 4px;
+
+    position: absolute;
+
+    transform: translate(-50%, -50%) rotate(-315deg); // girar o tracinho em 315°
+    // centralizar os eixos x e y
+    top: 50%;
+    left: 50%;
+    // transição para tracinho virar 'x'
+    transition: 0.3s ease;
+
+    background-color: $secondary-500;
+  }
+}
+
+.menu-mobile {
+  // ocupar 100% da largura do pai (.relative)
+  width: 100%;
+  // ocupar 100% da altura da página, abaixo do menu
+  height: 100vh;
+
+  // Menu com Efeito de Trasnparência
+  margin-top: 80px;
+  background-color: $white-light;
+  backdrop-filter: blur(12px);
+  z-index: 1;
+
+  // transição para mostar menu
+  transition: 0.7s ease;
+
+  position: absolute;
+  top: 0;
+  left: -100%; // menu mobile desativado
+
+  li {
+    .link-menu-mobile {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      padding: 24px 16px;
+
+      color: $gray-6 !important;
+
+      &:hover {
+        padding-left: 24px;
+        color: $secondary-500 !important;
+      }
+    }
+  }
+}
+.menu-mobile.showmenu {
+  // ocupar 100% da largura do pai (.relative)
+  width: 100%;
+  // ocupar 100% da altura da página, abaixo do menu
+  height: 100vh;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  z-index: -1;
+}
