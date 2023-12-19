@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -532,6 +533,10 @@
   border: 2px solid #3b4842;
   border-radius: 4px;
   background-color: rgba(27, 105, 210, 0.2);
+}
+
+.pt-super {
+  padding-top: 750px !important;
 }
 
 .s-0 {
@@ -1572,7 +1577,7 @@ html {
 
 body {
   width: 100%;
-  background-color: #151b26;
+  background-color: #f7f9fc;
 }
 body::-webkit-scrollbar {
   padding-right: 2px;
@@ -1607,69 +1612,23 @@ img {
 
 header {
   width: 100%;
-  height: 80px;
-  position: fixed;
-  z-index: 0;
+  height: 100vh;
+  z-index: 1;
 }
 @media screen and (max-width: 960px) {
   header {
+    position: fixed;
     background-color: #f7f9fc;
   }
 }
 
 .menu {
-  padding: 40px 0;
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 @media screen and (max-width: 960px) {
   .menu {
     display: none;
-  }
-}
-
-.title-content {
-  margin-top: 0 !important;
-}
-.title-content .subtitle-header {
-  position: relative;
-}
-.title-content .subtitle-header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  top: 50%;
-  left: -45%;
-  background-color: #f7f9fc;
-}
-.title-content .subtitle-header::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 2px;
-  top: 50%;
-  right: -45%;
-  background-color: #f7f9fc;
-}
-@media screen and (max-width: 960px) {
-  .title-content .subtitle-header::before {
-    width: 50px;
-    left: -25%;
-  }
-  .title-content .subtitle-header::after {
-    width: 50px;
-    right: -25%;
-  }
-}
-@media screen and (max-width: 960px) {
-  .title-content {
-    padding-top: 40px;
   }
 }
 
@@ -1736,25 +1695,24 @@ header {
 .menu-mobile {
   width: 100%;
   height: 100vh;
-  margin-top: 80px;
   background-color: #f7f9fc;
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-  z-index: 1;
   transition: 0.7s ease;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -120%;
+}
+.menu-mobile li {
+  list-style: none;
 }
 .menu-mobile li .link-menu-mobile {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 24px 16px;
+  padding: 24px 32px;
   color: #888a8c !important;
 }
 .menu-mobile li .link-menu-mobile:hover {
-  padding-left: 24px;
+  padding-left: 48px;
   color: #864982 !important;
 }
 
@@ -1763,13 +1721,11 @@ header {
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -24px;
+  z-index: 999;
 }
 
-.title {
-  z-index: -1;
-}
-.title .ilustration-header {
+.ilustration {
   max-width: 190px;
 }
 
@@ -1777,7 +1733,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -1785,7 +1741,31 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 960px) {
+  .bg-video {
+    margin: 72px 0;
+    height: 75%;
+  }
+}
 .bg-video::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+  height: 395px;
+  background-image: url("../../img/hero-tiitle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 960px) {
+  .bg-video::after {
+    width: 100%; /* 100% da largura do elemento pai */
+    background-size: contain; /* Garante que a imagem caiba completamente no contêiner */
+  }
+}
+.bg-video::before {
   content: "";
   display: block;
   position: absolute;

@@ -12,9 +12,9 @@
 
 <body>
     <!-- HEADER -->
-    <header class="px-3">
+    <header class="px-3 relative">
         <nav>
-            <ul class="menu">
+            <ul class="menu flex-center py-3">
                 <li><a href="">Home</a></li>
                 <li><a href="">História</a></li>
                 <li><a href="">Mensagens</a></li>
@@ -32,48 +32,38 @@
             <div class="bx-bottom"></div>
         </div>
 
-        <div class="title">
-            <div class="grid-3 disappear"></div>
-            <div class="grid-6 flex-center-column title-content">
-                <div class="ilustration-header">
-                    <img src="svg/ilustration-header.svg" />
-                </div>
-                <div class="subtitle-header mt-3">
-                    <p class="uppercase p-title color-white">o casamento de</p>
-                </div>
-                <div class="title-header my-3">
-                    <h1>Marcus e Sarah</h1>
-                </div>
-                <div class="date-header">
-                    <p class="color-white p-title">07.09.2024</p>
-                </div>
+        <!-- BG VIDEO -->
+        <section class="bg-video">
+            <video class="video" autoplay muted loop>
+                <source src="video/video-header.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <div class="relative">
+            <div class="menu-mobile">
+                <ul class="nav-mobile">
+                    <li><a href="" class="link-menu-mobile">Home</a></li>
+                    <li><a href="" class="link-menu-mobile">História</a></li>
+                    <li><a href="" class="link-menu-mobile">Mensagens</a></li>
+                    <li><a href="" class="link-menu-mobile">Pessoas</a></li>
+                    <li><a href="" class="link-menu-mobile">Cerimônia</a></li>
+                    <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li>
+                    <li><a href="" class="link-menu-mobile">Confirmar Presença</a></li>
+                    <li><a href="" class="link-menu-mobile">Selfies</a></li>
+                </ul>
             </div>
-            <div class="grid-3 disappear"></div>
         </div>
+    
     </header>
 
-    <!--=========== MENU MOBILE ===========-->
-    <div class="relative">
-        <div class="menu-mobile">
-            <ul class="nav-mobile">
-                <li><a href="" class="link-menu-mobile">Home</a></li>
-                <li><a href="" class="link-menu-mobile">História</a></li>
-                <li><a href="" class="link-menu-mobile">Mensagens</a></li>
-                <li><a href="" class="link-menu-mobile">Pessoas</a></li>
-                <li><a href="" class="link-menu-mobile">Cerimônia</a></li>
-                <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li>
-                <li><a href="" class="link-menu-mobile">Confirmar Presença</a></li>
-                <li><a href="" class="link-menu-mobile">Selfies</a></li>
-            </ul>
-        </div>
-    </div>
+    
 
-    <!-- BG VIDEO -->
-    <section class="bg-video">
-        <video class="video" autoplay muted loop>
-            <source src="video/video-header.mp4" type="video/mp4">
-        </video>
-    </section>
+    <main class="container flex-center-column text-center border-g">
+        <img src="svg/figure-secondary.svg" class="ilustration" />
+        <h1 class="color-black">Conheça os Noivos</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet nisi architecto at recusandae, temporibus reiciendis, veniam vel illo perferendis nemo doloremque voluptate odit, ab repudiandae voluptatem cumque tempore voluptates.</p>
+        <p class="bold color-black">on Dec 28, 2017 — Boracay, Philippines</p>
+    </main>
 
 
 
