@@ -377,4 +377,35 @@ $gutter: 32px;
   background-color: rgba(27, 105, 210, 0.2);
 }
 
+.p-title-noivos {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 10px !important;
+  text-align: center;
 
+  @include responsive(s) {
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+}
+
+.border-noiva {
+  border: 1px solid rgba(182, 101, 177, 0.3);
+  padding: 4px 8px 4px 16px;
+}
+.border-noivo {
+  border: 1px solid rgba(59, 72, 66, 0.3);
+  padding: 4px 8px 4px 16px;
+}
+
+.fix-spacing {
+  margin-left: 24px !important;
+  margin-right: 24px !important;
+
+  @include responsive(s) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}

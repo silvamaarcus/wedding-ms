@@ -74,7 +74,7 @@
     font-family: "Clicker Script", cursive;
     font-size: 36px;
     line-height: 120%;
-    font-weight: 300;
+    font-weight: 400;
   } @else if $size == h4 and $device == mobile {
     font-family: "Clicker Script", cursive;
     font-size: 28px;
@@ -312,6 +312,7 @@ p {
   font-weight: 400;
   line-height: 36px; 
   letter-spacing: 10px;
+  text-align: center;
 
   @include responsive(s) {
     font-size: 14px;
@@ -321,7 +322,6 @@ p {
 
 .bold {
   font-weight: bold;
-  color: $white-dark;
 }
 
 span {

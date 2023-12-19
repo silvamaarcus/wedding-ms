@@ -34,11 +34,12 @@
 
         <!-- BG VIDEO -->
         <section class="bg-video">
-            <video class="video" autoplay muted loop>
-                <source src="video/video-header.mp4" type="video/mp4">
+            <video class="video" autoplay muted loop playsinline>
+                <!-- <source src="video/video-header.mp4" type="video/mp4"> -->
             </video>
         </section>
 
+        <!-- MENU MOBILE -->
         <div class="relative">
             <div class="menu-mobile">
                 <ul class="nav-mobile">
@@ -53,16 +54,40 @@
                 </ul>
             </div>
         </div>
-    
+
     </header>
 
-    
+    <!-- SECTION CASAL INFO -->
+    <main class="container">
+        <div class="flex-center-column text-center">
+            <img src="svg/figure-secondary.svg" class="ilustration" />
+            <h1 class="color-black">Conheça os Noivos</h1>
+            <p class="w-75 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet nisi architecto at recusandae, temporibus reiciendis, veniam vel illo perferendis nemo doloremque voluptate odit, ab repudiandae voluptatem cumque tempore voluptates.</p>
+            <p class="bold color-black mt-1">on Dec 28, 2017 — Boracay, Philippines</p>
+        </div>
 
-    <main class="container flex-center-column text-center border-g">
-        <img src="svg/figure-secondary.svg" class="ilustration" />
-        <h1 class="color-black">Conheça os Noivos</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet nisi architecto at recusandae, temporibus reiciendis, veniam vel illo perferendis nemo doloremque voluptate odit, ab repudiandae voluptatem cumque tempore voluptates.</p>
-        <p class="bold color-black">on Dec 28, 2017 — Boracay, Philippines</p>
+
+        <div class="row flex-center mt-5 py-3 mx-1">
+            <div class="flex-center-column">
+                <div class="profile-big">
+                    <img src="img/noivo.png" alt="Marcus" />
+                </div>
+                <h3 class="color-primary text-center">Marcus Silva</h3>
+                <p class="p-title-noivos uppercase color-primary border-noivo">noivo</p>
+            </div>
+
+            <div class="fix-spacing">
+                <img src="svg/logo.svg" class="logo" alt="Aliança" />
+            </div>
+
+            <div class="flex-center-column">
+                <div class="profile-big">
+                    <img src="img/noiva.png" alt="Sarah" />
+                </div>
+                <h3 class="color-secondary text-center">Sarah Barbosa</h3>
+                <p class="p-title-noivos uppercase color-secondary border-noiva">noiva</p>
+            </div>
+        </div>
     </main>
 
 
