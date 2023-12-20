@@ -58,12 +58,12 @@
     </header>
 
     <!-- SECTION CASAL INFO -->
-    <main class="container">
+    <main class="container fix-mobile-spacing">
         <div class="flex-center-column text-center">
             <img src="svg/figure-secondary.svg" class="ilustration" />
             <h1 class="color-black">Conheça os Noivos</h1>
             <p class="w-75 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet nisi architecto at recusandae, temporibus reiciendis, veniam vel illo perferendis nemo doloremque voluptate odit, ab repudiandae voluptatem cumque tempore voluptates.</p>
-            <p class="bold color-black mt-1">on Dec 28, 2017 — Boracay, Philippines</p>
+            <p class="bold color-black mt-2">on Dec 28, 2017 — Boracay, Philippines</p>
         </div>
 
 
@@ -73,7 +73,7 @@
                     <img src="img/noivo.png" alt="Marcus" />
                 </div>
                 <h3 class="color-primary text-center">Marcus Silva</h3>
-                <p class="p-title-noivos uppercase color-primary border-noivo">noivo</p>
+                <p class="p-title-alt uppercase color-primary border-noivo">noivo</p>
             </div>
 
             <div class="fix-spacing">
@@ -85,11 +85,42 @@
                     <img src="img/noiva.png" alt="Sarah" />
                 </div>
                 <h3 class="color-secondary text-center">Sarah Barbosa</h3>
-                <p class="p-title-noivos uppercase color-secondary border-noiva">noiva</p>
+                <p class="p-title-alt uppercase color-secondary border-noiva">noiva</p>
             </div>
         </div>
     </main>
 
+    <!-- SECTION CONTADOR -->
+    <section class="bg-contador">
+        <section class="container">
+            <div class="row flex-center-column">
+                <img src="svg/figure-contador.svg" class="ilustration-big" />
+
+                <h1 class="mt-5 text-center">O Grande Dia</h1>
+
+                <p class="p1 mt-5">7 de Setembro de 2024</p>
+
+                <div class="my-5 flex-center" id="contador">
+                    <div class="item">
+                        <h1 class="dias color-white"></h1>
+                        <span class="uppercase color-white p-title-alt">dias</span>
+                    </div>
+                    <div class="item">
+                        <h1 class="horas"></h1>
+                        <span class="uppercase color-white p-title-alt">horas</span>
+                    </div>
+                    <div class="item">
+                        <h1 class="minutos"></h1>
+                        <span class="uppercase color-white p-title-alt">minutos</span>
+                    </div>
+                    <div class="item">
+                        <h1 class="segundos"></h1>
+                        <span class="uppercase color-white p-title-alt">segundos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
 
 
     <script src="js/app.js"></script>

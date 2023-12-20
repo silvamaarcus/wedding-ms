@@ -183,7 +183,7 @@
 }
 
 h1 {
-  color: $white-dark;
+  color: $white-light;
   z-index: 5;
   @include typeface-1(h1, desktop);
   @include responsive(s) {
@@ -195,7 +195,7 @@ h1 {
 }
 
 h2 {
-  color: $white-dark;
+  color: $white-light;
   @include typeface-1(h2, desktop);
   @include responsive(s) {
     @include typeface-1(h2, mobile);
@@ -206,7 +206,7 @@ h2 {
 }
 
 h3 {
-  color: $white-dark;
+  color: $white-light;
   @include typeface-1(h3, desktop);
   @include responsive(s) {
     @include typeface-1(h3, mobile);
@@ -217,7 +217,7 @@ h3 {
 }
 
 h4 {
-  color: $white-dark;
+  color: $white-light;
   @include typeface-1(h4, desktop);
   @include responsive(s) {
     @include typeface-1(h4, mobile);
@@ -228,7 +228,7 @@ h4 {
 }
 
 h5 {
-  color: $white-dark;
+  color: $white-light;
   @include typeface-1(h5, desktop);
   @include responsive(s) {
     @include typeface-1(h5, mobile);
@@ -236,7 +236,7 @@ h5 {
 }
 
 h6 {
-  color: $white-dark;
+  color: $white-light;
 
   @include typeface-1(h6, desktop);
   @include responsive(s) {
@@ -269,6 +269,7 @@ p {
 }
 
 .p1 {
+  color: $white-dark;
   @include typeface-2(p1, desktop);
   @include responsive(s) {
     @include typeface-2(p1, mobile);
@@ -307,10 +308,12 @@ p {
 }
 
 .p-title {
+  font-family: "Source Sans 3", sans-serif;
+
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px; 
+  line-height: 36px;
   letter-spacing: 10px;
   text-align: center;
 

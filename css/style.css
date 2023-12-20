@@ -539,7 +539,16 @@
   background-color: rgba(27, 105, 210, 0.2);
 }
 
-.p-title-noivos {
+.ilustration {
+  max-width: 190px;
+}
+
+.ilustration-big {
+  max-width: 240px;
+}
+
+.p-title-alt {
+  font-family: "Source Sans 3", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -548,7 +557,7 @@
   text-align: center;
 }
 @media screen and (max-width: 960px) {
-  .p-title-noivos {
+  .p-title-alt {
     font-size: 14px;
     letter-spacing: 8px;
   }
@@ -572,6 +581,68 @@
   .fix-spacing {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .fix-mobile-spacing {
+    padding-top: 0 !important;
+  }
+}
+
+.bg-contador {
+  background-image: url("../../img/contador-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.bg-contador::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#contador {
+  padding: 8px 16px;
+  gap: 32px;
+}
+#contador .item {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+@media screen and (max-width: 960px) {
+  #contador {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  #contador .item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.dias,
+.horas,
+.minutos,
+.segundos {
+  color: #f7f9fc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 960px) {
+  .dias,
+  .horas,
+  .minutos,
+  .segundos {
+    padding: 0px 8px;
   }
 }
 
@@ -1244,7 +1315,7 @@
 }
 
 h1 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   z-index: 5;
   font-family: "Clicker Script", cursive;
   font-size: 80px;
@@ -1269,7 +1340,7 @@ h1 {
 }
 
 h2 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   font-family: "Clicker Script", cursive;
   font-size: 64px;
   line-height: 110%;
@@ -1293,7 +1364,7 @@ h2 {
 }
 
 h3 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   font-family: "Clicker Script", cursive;
   font-size: 48px;
   line-height: 120%;
@@ -1317,7 +1388,7 @@ h3 {
 }
 
 h4 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   font-family: "Clicker Script", cursive;
   font-size: 36px;
   line-height: 120%;
@@ -1341,7 +1412,7 @@ h4 {
 }
 
 h5 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   font-family: "Clicker Script", cursive;
   font-size: 24px;
   line-height: 140%;
@@ -1357,7 +1428,7 @@ h5 {
 }
 
 h6 {
-  color: #d8dbe3;
+  color: #f7f9fc;
   font-family: "Clicker Script", cursive;
   font-size: 18px;
   line-height: 150%;
@@ -1418,6 +1489,7 @@ p {
 }
 
 .p1 {
+  color: #d8dbe3;
   font-family: "Source Sans 3", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -1501,6 +1573,7 @@ p {
 }
 
 .p-title {
+  font-family: "Source Sans 3", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -1763,10 +1836,6 @@ header {
   top: 0;
   left: -24px;
   z-index: 999;
-}
-
-.ilustration {
-  max-width: 190px;
 }
 
 .bg-video {
