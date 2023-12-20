@@ -109,7 +109,7 @@ $gutter: 32px;
 
 .disappear {
   @include responsive(s) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -318,6 +318,11 @@ $gutter: 32px;
   min-width: 48px;
 }
 
+.logo-big {
+  max-width: 128px;
+  min-width: 64px;
+}
+
 // Definições para fotos de profile (avatar).
 .profile {
   width: 48px;
@@ -494,8 +499,7 @@ $gutter: 32px;
 .casal {
   margin-top: 200px;
 
-  @include responsive(s) {  
-
+  @include responsive(s) {
     .card-noiva {
       margin-top: 240px !important;
     }
@@ -567,5 +571,48 @@ $gutter: 32px;
       width: 200px;
       height: 200px;
     }
+  }
+}
+
+// Section Linha do tempo
+
+.card-p-100 {
+  background-color: $primary-100;
+}
+
+.card-s-100 {
+  background-color: $secondary-100;
+}
+
+.linha {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    border-left: 1px dashed $secondary-500;
+    height: 80%;
+
+    top: 0;
+    left: 49%;
+
+    z-index: -4;
+  }
+
+  // limpar tamanho da linha - hack
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 32px;
+    height: 32px;
+
+    top: -3px;
+    left: 47.5%;
+
+    background-color: $white-light;
+
+    z-index: -3;
   }
 }

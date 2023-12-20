@@ -305,7 +305,7 @@
 
 @media screen and (max-width: 960px) {
   .disappear {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -482,6 +482,11 @@
 .logo {
   max-width: 64px;
   min-width: 48px;
+}
+
+.logo-big {
+  max-width: 128px;
+  min-width: 64px;
 }
 
 .profile {
@@ -709,6 +714,36 @@
     width: 200px;
     height: 200px;
   }
+}
+
+.card-p-100 {
+  background-color: #bce1d0;
+}
+
+.card-s-100 {
+  background-color: #f8eef7;
+}
+
+.linha::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px dashed #864982;
+  height: 80%;
+  top: 0;
+  left: 49%;
+  z-index: -4;
+}
+.linha::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -3px;
+  left: 47.5%;
+  background-color: #f7f9fc;
+  z-index: -3;
 }
 
 .pt-super {
@@ -1354,6 +1389,54 @@
 .py-9 {
   padding-top: 128px !important;
   padding-bottom: 128px !important;
+}
+
+@media screen and (max-width: 960px) {
+  .off-ml {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-mr {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-mt {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-mb {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-pl {
+    padding-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-pr {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-pt {
+    padding-top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .off-pb {
+    padding-bottom: 0 !important;
+  }
 }
 
 .h0 {

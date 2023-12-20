@@ -525,3 +525,50 @@ $gap-super: 750px;
   padding-top: $gap-9 !important;
   padding-bottom: $gap-9 !important;
 }
+
+
+// Mobile Fix
+
+// Remove Margins: 
+.off-ml {
+  @include responsive(s) {
+    margin-left: 0 !important;
+  }
+}
+.off-mr {
+  @include responsive(s) {
+    margin-right:  0 !important;
+  }
+}
+.off-mt {
+  @include responsive(s) {
+    margin-top: 0 !important;
+  }
+}
+.off-mb {
+  @include responsive(s) {
+    margin-bottom: 0 !important;
+  }
+}
+
+// Remove Paddings: 
+.off-pl {
+  @include responsive(s) {
+    padding-left: 0 !important;
+  }
+}
+.off-pr {
+  @include responsive(s) {
+    padding-right:  0 !important;
+  }
+}
+.off-pt {
+  @include responsive(s) {
+    padding-top: 0 !important;
+  }
+}
+.off-pb {
+  @include responsive(s) {
+    padding-bottom: 0 !important;
+  }
+}
