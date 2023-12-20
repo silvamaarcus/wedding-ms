@@ -676,6 +676,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 960px) {
+  .card-noivo::after {
+    width: 200px;
+    height: 200px;
+  }
+}
 
 .card-noiva {
   background-color: #f8eef7;
@@ -697,6 +703,12 @@
   background-image: url("../../img/noiva.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 960px) {
+  .card-noiva::after {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .pt-super {

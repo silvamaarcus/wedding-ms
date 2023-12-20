@@ -494,7 +494,8 @@ $gutter: 32px;
 .casal {
   margin-top: 200px;
 
-  @include responsive(s) {
+  @include responsive(s) {  
+
     .card-noiva {
       margin-top: 240px !important;
     }
@@ -527,6 +528,11 @@ $gutter: 32px;
     background-image: url("../../img/noivo.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include responsive(s) {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
 
@@ -556,5 +562,10 @@ $gutter: 32px;
     background-image: url("../../img/noiva.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include responsive(s) {
+      width: 200px;
+      height: 200px;
+    }
   }
 }
