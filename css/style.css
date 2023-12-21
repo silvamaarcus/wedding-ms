@@ -746,6 +746,16 @@
   z-index: -3;
 }
 
+@media screen and (max-width: 960px) {
+  .cerimonia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cerimonia .cerimonia-logo {
+    display: none;
+  }
+}
+
 .pt-super {
   padding-top: 750px !important;
 }
@@ -2045,7 +2055,7 @@ header {
 }
 
 .icon-s {
-  max-width: 36px;
+  max-width: 16px;
   transition: 0.5s ease;
 }
 @media screen and (max-width: 960px) {

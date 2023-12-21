@@ -616,3 +616,18 @@ $gutter: 32px;
     z-index: -3;
   }
 }
+
+// Section Cerimonia
+
+.cerimonia {
+  @include responsive(s) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .cerimonia-logo {
+      display: none;
+    }
+  }
+
+  
+}
