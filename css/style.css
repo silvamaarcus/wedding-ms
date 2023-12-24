@@ -756,6 +756,10 @@
   }
 }
 
+.bg-primary-500 {
+  background-color: #3b4842;
+}
+
 .pt-super {
   padding-top: 750px !important;
 }
