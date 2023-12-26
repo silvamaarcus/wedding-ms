@@ -630,5 +630,9 @@ $gutter: 32px;
   }
 }
 
-// Section Lista de Presentes
+// Section Selfies
 
+.album {
+  max-width: $container-l;
+  margin: 0 auto;
+}

@@ -756,8 +756,9 @@
   }
 }
 
-.bg-primary-500 {
-  background-color: #3b4842;
+.album {
+  max-width: 1216px;
+  margin: 0 auto;
 }
 
 .pt-super {
