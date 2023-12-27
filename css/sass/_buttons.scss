@@ -66,3 +66,28 @@ option {
     opacity: 0.7; // aplicar opacidade
   }
 }
+
+.btn-2 {
+  display: inline-block;
+  padding: 8px 24px;
+
+  // use cores desejada...
+  color: $white-light;
+  background: linear-gradient(
+    224.78deg,
+    #b665b1 8.12%,
+    #864982 92.21%
+  ) !important;
+
+  border-radius: 4px;
+  border: 0;
+
+  @include typeface-2(p3, desktop);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.7; // aplicar opacidade
+  }
+}
