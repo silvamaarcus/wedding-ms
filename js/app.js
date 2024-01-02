@@ -64,3 +64,95 @@ atualizarTemporizador();
 
 // Inicie o temporizador automaticamente
 iniciarTemporizador();
+
+// Validação de formulário.
+
+function configurarFormulario() {
+  let form = document.querySelector("form");
+  let nomeContainer = document.querySelector(".flex-start-row"); // Container do campo de nome
+  let campoNomeConvidado = null;
+
+  form.addEventListener("change", function (event) {
+    let quantidadeAdultos = document.getElementById("quantidade_adultos").value;
+
+    // Verifica se a opção selecionada é "2"
+    if (quantidadeAdultos == 2 && !campoNomeConvidado) {
+      // Adiciona dinamicamente um segundo campo de nome apenas se não existir
+      campoNomeConvidado = document.createElement("div");
+      campoNomeConvidado.classList.add("flex-start-row");
+
+      let label = document.createElement("label");
+      label.setAttribute("for", "nome2");
+      label.classList.add("p1", "w-50");
+      label.textContent = "Convidado: ";
+
+      let input = document.createElement("input");
+      input.setAttribute("type", "text");
+      input.setAttribute("id", "nome2");
+      input.setAttribute("name", "nome2");
+      input.setAttribute("placeholder", "Nome do convidado");
+      input.setAttribute("required", "");
+
+      campoNomeConvidado.appendChild(label);
+      campoNomeConvidado.appendChild(input);
+
+      // Insere o novo campo após o primeiro campo de nome
+      nomeContainer.parentNode.insertBefore(
+        campoNomeConvidado,
+        nomeContainer.nextSibling
+      );
+    } else if (campoNomeConvidado && quantidadeAdultos != 2) {
+      // Remove o campo de nome do convidado se a opção for diferente de "2"
+      campoNomeConvidado.parentNode.removeChild(campoNomeConvidado);
+      campoNomeConvidado = null;
+    }
+  });
+
+  form.addEventListener("submit", function (event) {
+    let form = document.querySelector("form");
+
+    form.addEventListener("submit", function (event) {
+      let nome = document.getElementById("nome").value;
+      let quantidadeAdultos =
+        document.getElementById("quantidade_adultos").value;
+      let quantidadeCriancas = document.getElementById(
+        "quantidade_criancas"
+      ).value;
+      let email = document.getElementById("email").value;
+      let telefone = document.getElementById("telefone").value;
+
+      // Validar o nome (não vazio)
+      if (nome.trim() === "") {
+        alert('Por favor, preencha o campo "Nome Completo".');
+        event.preventDefault();
+        return;
+      }
+
+      // Validar a quantidade de adultos (pelo menos 1)
+      if (quantidadeAdultos < 1) {
+        alert("Por favor, selecione uma quantidade válida de adultos.");
+        event.preventDefault();
+        return;
+      }
+
+      // Validar o email
+      let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Por favor, insira um endereço de e-mail válido.");
+        event.preventDefault();
+        return;
+      }
+
+      // Validar o telefone
+      let telefoneRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+      if (!telefoneRegex.test(telefone)) {
+        alert(
+          "Por favor, insira um número de telefone válido (formato: (00) 00000-0000)."
+        );
+        event.preventDefault();
+        return;
+      }
+    });
+  });
+}
+document.addEventListener("DOMContentLoaded", configurarFormulario);
