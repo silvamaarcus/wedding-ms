@@ -66,7 +66,6 @@ atualizarTemporizador();
 iniciarTemporizador();
 
 // Validação de formulário.
-
 function configurarFormulario() {
   let form = document.querySelector("form");
   let nomeContainer = document.querySelector(".flex-start-row"); // Container do campo de nome
@@ -83,7 +82,7 @@ function configurarFormulario() {
 
       let label = document.createElement("label");
       label.setAttribute("for", "nome2");
-      label.classList.add("p1", "w-50");
+      label.classList.add("p1", "w-50", "mt-2");
       label.textContent = "Convidado: ";
 
       let input = document.createElement("input");
@@ -92,6 +91,7 @@ function configurarFormulario() {
       input.setAttribute("name", "nome2");
       input.setAttribute("placeholder", "Nome do convidado");
       input.setAttribute("required", "");
+      input.classList.add("mt-2");
 
       campoNomeConvidado.appendChild(label);
       campoNomeConvidado.appendChild(input);

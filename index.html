@@ -16,14 +16,13 @@
     <header class="px-3 relative">
         <nav>
             <ul class="menu flex-center py-3">
-                <li><a href="">Home</a></li>
-                <li><a href="">História</a></li>
-                <li><a href="">Mensagens</a></li>
-                <li><a href="">Pessoas</a></li>
-                <li><a href="">Cerimônia</a></li>
-                <li><a href="">Lista de Presentes</a></li>
-                <li><a href="">Confirmar Presença</a></li>
-                <li><a href="">Selfies</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#pessoas">Padrinhos & Madrinhas</a></li>
+                <li><a href="#cerimonia">Cerimônia</a></li>
+                <!-- <li><a href="">Lista de Presentes</a></li> -->
+                <li><a href="#presenca">Confirmar Presença</a></li>
+                <li><a href="#selfies">Selfies</a></li>
             </ul>
         </nav>
 
@@ -45,14 +44,13 @@
         <div class="relative">
             <div class="menu-mobile">
                 <ul class="nav-mobile">
-                    <li><a href="" class="link-menu-mobile">Home</a></li>
-                    <li><a href="" class="link-menu-mobile">História</a></li>
-                    <li><a href="" class="link-menu-mobile">Mensagens</a></li>
-                    <li><a href="" class="link-menu-mobile">Pessoas</a></li>
+                    <li><a href="/" class="link-menu-mobile">Home</a></li>
+                    <li><a href="#historia" class="link-menu-mobile">História</a></li>
+                    <li><a href="#pessoas" class="link-menu-mobile">Padrinhos & Madrinhas</a></li>
                     <li><a href="" class="link-menu-mobile">Cerimônia</a></li>
-                    <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li>
-                    <li><a href="" class="link-menu-mobile">Confirmar Presença</a></li>
-                    <li><a href="" class="link-menu-mobile">Selfies</a></li>
+                    <!-- <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li> -->
+                    <li><a href="#presenca" class="link-menu-mobile">Confirmar Presença</a></li>
+                    <li><a href="#selfies" class="link-menu-mobile">Selfies</a></li>
                 </ul>
             </div>
         </div>
@@ -148,7 +146,7 @@
     </section>
 
     <!-- SECTION LINHA DO TEMPO -->
-    <section class="container flex-center-column">
+    <section class="container flex-center-column" id="historia">
         <img src="svg/logo.svg" class="logo-big" alt="Logo">
 
         <h1 class="color-primary mt-6">Nossa História</h1>
@@ -214,7 +212,7 @@
     </section>
 
     <!-- SECTION PADRINHOS -->
-    <div class="flex-center-column">
+    <div class="flex-center-column" id="pessoas">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration">
         <h1 class="color-primary mt-3">Os Padrinhos</h1>
         <p class="w-75 mt-3 text-center">Escolher nossos padrinhos foi como compor uma música. Cada um é uma nota única, uma parte essencial da nossa jornada. Serão testemunhas do nosso amor e pilares nos momentos especiais.</p>
@@ -342,7 +340,7 @@
     </section>
 
     <!-- SECTION CERIMONIA -->
-    <section class="container flex-center-column pt-0">
+    <section class="container flex-center-column pt-0" id="cerimonia">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration">
         <h1 class="color-primary mt-3 text-center">Cerimônia e Recepção</h1>
         <p class="w-75 mt-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officiis sequi vel, cumque facilis perspiciatis voluptate adipisci. Obcaecati possimus voluptate eaque nesciunt! Omnis fuga, alias error at saepe necessitatibus adipisci!</p>
@@ -384,7 +382,7 @@
     </section>
 
     <!-- SECTION SELFIES -->
-    <section class="container flex-center-column pt-0">
+    <section class="container flex-center-column pt-0" id="selfies">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration p-0">
         <h1 class="color-primary mt-3">Selfies</h1>
         <p class="w-75 mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officiis sequi vel, cumque facilis perspiciatis voluptate adipisci. Obcaecati possimus voluptate eaque nesciunt! Omnis fuga, alias error at saepe necessitatibus adipisci!</p>
@@ -411,13 +409,15 @@
     </div>
 
     <!-- SECTION CONFIRMAR PRESENCA -->
-    <section class="bg-primary-500 mt-8">
+    <section class="bg-primary-500 mt-8" id="presenca">
         <div class="container">
             <h1 class="color-white text-center mt-3">Confirme sua Presença</h1>
             <div class="row mt-6">
+
                 <div class="grid-3 disappear"></div>
+
                 <div class="grid-6 px-2">
-                    <form action="#">
+                    <form action="https://api.sheetmonkey.io/form/uLJVyvV5Ai3hwzGRdCphcw" method="post">
                         <div class="flex-start-row">
                             <label for="nome" class="p1 w-50">Nome Completo</label>
                             <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
@@ -454,9 +454,9 @@
                         <div class="flex-center mt-6">
                             <button type="submit" class="btn-2">Confirmar Presença</button>
                         </div>
-
                     </form>
                 </div>
+
                 <div class="grid-3 disappear"></div>
             </div>
         </div>
