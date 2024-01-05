@@ -8,6 +8,7 @@
     <title>Marcus & Sarah</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/svg" href="svg/favicon.svg">
 </head>
 
@@ -20,9 +21,9 @@
                 <li><a href="#historia">História</a></li>
                 <li><a href="#pessoas">Padrinhos & Madrinhas</a></li>
                 <li><a href="#cerimonia">Cerimônia</a></li>
-                <!-- <li><a href="">Lista de Presentes</a></li> -->
-                <li><a href="#presenca">Confirmar Presença</a></li>
+                <!-- <li><a href="">Lista de Presentes</a></li> -->                
                 <li><a href="#selfies">Selfies</a></li>
+                <li><a href="#presenca">Confirmar Presença</a></li>
             </ul>
         </nav>
 
@@ -48,9 +49,9 @@
                     <li><a href="#historia" class="link-menu-mobile">História</a></li>
                     <li><a href="#pessoas" class="link-menu-mobile">Padrinhos & Madrinhas</a></li>
                     <li><a href="" class="link-menu-mobile">Cerimônia</a></li>
-                    <!-- <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li> -->
-                    <li><a href="#presenca" class="link-menu-mobile">Confirmar Presença</a></li>
+                    <!-- <li><a href="" class="link-menu-mobile">Lista de Presentes</a></li> -->                    
                     <li><a href="#selfies" class="link-menu-mobile">Selfies</a></li>
+                    <li><a href="#presenca" class="link-menu-mobile">Confirmar Presença</a></li>
                 </ul>
             </div>
         </div>
@@ -58,7 +59,7 @@
     </header>
 
     <!-- SECTION CASAL INFO -->
-    <main class="container fix-mobile-spacing">
+    <main class="container fix-mobile-spacing" data-aos="fade-up" data-aos-delay="200">
         <div class="flex-center-column text-center">
             <img src="svg/figure-secondary.svg" class="ilustration" />
             <h1 class="color-primary">Conheça os Noivos</h1>
@@ -90,7 +91,7 @@
     </main>
 
     <!-- SECTION CONTADOR -->
-    <section class="bg-contador">
+    <section class="bg-contador" data-aos="fade-right" data-aos-delay="300">
         <section class="container">
             <div class="row flex-center-column">
                 <img src="svg/figure-contador.svg" class="ilustration-big" />
@@ -122,7 +123,7 @@
     </section>
 
     <!-- SECTION CASAL BIG -->
-    <section class="container flex-center-column text-center">
+    <section class="container flex-center-column text-center" data-aos="fade-up" data-aos-delay="200">
         <img src="svg/figure-casal.svg" alt="Casal" class="ilustration">
         <h1 class="color-primary mt-6">Noivo e Noiva</h1>
         <p class="w-75 mt-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet nisi architecto at recusandae, temporibus reiciendis, veniam vel illo perferendis nemo doloremque voluptate odit, ab repudiandae voluptatem cumque tempore voluptates.</p>
@@ -146,14 +147,14 @@
     </section>
 
     <!-- SECTION LINHA DO TEMPO -->
-    <section class="container flex-center-column" id="historia">
+    <section class="container flex-center-column" id="historia" data-aos="fade-up" data-aos-delay="300">
         <img src="svg/logo.svg" class="logo-big" alt="Logo">
 
         <h1 class="color-primary mt-6">Nossa História</h1>
 
         <div class="linha relative mt-6">
             <!-- COMO NOS CONHECEMOS -->
-            <div class="row">
+            <div class="row" data-aos="flip-right" data-aos-delay="600">
                 <div class="grid-5 card-p-100 p-3">
                     <h3 class="color-primary">Como Nos Conhecemos</h3>
                     <p class="p2 my-3">25 de Setembro de 2021</p>
@@ -167,7 +168,7 @@
                 <div class="grid-4 disappear"></div>
             </div>
             <!-- PRIMEIRO ENCONTRO -->
-            <div class="row">
+            <div class="row" data-aos="flip-right" data-aos-delay="600">
                 <div class="grid-4 disappear"></div>
                 <div class="grid-3 flex-end-row pr-3 disappear pt-0">
                     <div class="profile-big disappear">
@@ -181,7 +182,7 @@
                 </div>
             </div>
             <!-- O NAMORO -->
-            <div class="row">
+            <div class="row" data-aos="flip-right" data-aos-delay="600">
                 <div class="grid-5 card-p-100 p-3">
                     <h3 class="color-primary">O Namoro</h3>
                     <p class="p2 my-3">25 de Setembro de 2021</p>
@@ -195,7 +196,7 @@
                 <div class="grid-4 disappear"></div>
             </div>
             <!-- O NOIVADO -->
-            <div class="row">
+            <div class="row" data-aos="flip-right" data-aos-delay="600">
                 <div class="grid-4 disappear"></div>
                 <div class="grid-3 flex-end-row pr-3 pt-0 disappear">
                     <div class="profile-big disappear">
@@ -212,12 +213,12 @@
     </section>
 
     <!-- SECTION PADRINHOS -->
-    <div class="flex-center-column" id="pessoas">
+    <div class="flex-center-column" id="pessoas" data-aos="fade-right" data-aos-delay="300">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration">
         <h1 class="color-primary mt-3">Os Padrinhos</h1>
         <p class="w-75 mt-3 text-center">Escolher nossos padrinhos foi como compor uma música. Cada um é uma nota única, uma parte essencial da nossa jornada. Serão testemunhas do nosso amor e pilares nos momentos especiais.</p>
     </div>
-    <section class="container-swiper">
+    <section class="container-swiper" data-aos="fade-right" data-aos-delay="300">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -276,12 +277,12 @@
     </section>
 
     <!-- SECTION MADRINHAS -->
-    <div class="flex-center-column">
+    <div class="flex-center-column" data-aos="fade-right" data-aos-delay="300">
         <img src="svg/figure-primary.svg" alt="Casal" class="ilustration">
         <h1 class="color-secondary mt-3">As Madrinhas</h1>
         <p class="w-75 mt-3 text-center">Selecionar nossas madrinhas foi como escolher as joias mais reluzentes para adornar nosso grande dia. Cada uma delas é uma pérola única, refletindo a beleza da amizade e da cumplicidade.</p>
     </div>
-    <section class="container-swiper">
+    <section class="container-swiper" data-aos="fade-right" data-aos-delay="350">
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -340,7 +341,7 @@
     </section>
 
     <!-- SECTION CERIMONIA -->
-    <section class="container flex-center-column pt-0" id="cerimonia">
+    <section class="container flex-center-column pt-0" id="cerimonia" data-aos="fade-up" data-aos-delay="300">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration">
         <h1 class="color-primary mt-3 text-center">Cerimônia e Recepção</h1>
         <p class="w-75 mt-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officiis sequi vel, cumque facilis perspiciatis voluptate adipisci. Obcaecati possimus voluptate eaque nesciunt! Omnis fuga, alias error at saepe necessitatibus adipisci!</p>
@@ -349,8 +350,8 @@
                 <div>
                     <img src="img/cerimonia-img.png" alt="A Obra">
                 </div>
-                <div class="card-p-100 p-3">
-                    <h3 class="color-primary text-center">A Obra - Recepções e Eventos</h3>
+                <div class="card-p-100 p-3"> 
+                    <h3 class="color-primary text-center bold">A Obra</h3>
                     <div class="flex-center mt-3 cerimonia">
                         <div class="text-center cerimonia-data">
                             <img src="svg/icon-calender.svg" class="icon-s mb-1" />
@@ -382,7 +383,7 @@
     </section>
 
     <!-- SECTION SELFIES -->
-    <section class="container flex-center-column pt-0" id="selfies">
+    <section class="container flex-center-column pt-0" id="selfies" data-aos="fade-up" data-aos-delay="300">
         <img src="svg/figure-secondary.svg" alt="Casal" class="ilustration p-0">
         <h1 class="color-primary mt-3">Selfies</h1>
         <p class="w-75 mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et officiis sequi vel, cumque facilis perspiciatis voluptate adipisci. Obcaecati possimus voluptate eaque nesciunt! Omnis fuga, alias error at saepe necessitatibus adipisci!</p>
@@ -465,11 +466,15 @@
 
     <script src="js/app.js"></script>
 
-
+    <!-- Iniciando função de animação para Scroll, CSS imprtado no Head. -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Iniciando biblioteca JS para Swiper, CSS importado no Head. -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
+
+        AOS.init();
+
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 'auto',
             spaceBetween: 40,
