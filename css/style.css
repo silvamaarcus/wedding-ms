@@ -602,7 +602,7 @@
 }
 
 .bg-contador {
-  background-image: url("../../img/contador-img.png");
+  background-image: url("../../img/contador-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -619,7 +619,7 @@
 }
 @media screen and (max-width: 960px) {
   .bg-contador {
-    background-image: url("../../img/contador-mobile-img.png");
+    background-image: url("../../img/contador-mobile-img.webp");
   }
 }
 
