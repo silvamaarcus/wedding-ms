@@ -459,6 +459,10 @@ $gutter: 32px;
 
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  @include responsive(s) {
+    background-image: url("../../img/contador-mobile-img.png");
+  }
 }
 
 #contador {
