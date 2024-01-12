@@ -780,6 +780,13 @@
   width: 30%;
 }
 
+.a-noLink {
+  cursor: text !important;
+}
+.a-noLink:hover {
+  opacity: 1 !important;
+}
+
 .pt-super {
   padding-top: 750px !important;
 }

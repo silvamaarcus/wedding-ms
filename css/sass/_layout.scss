@@ -653,7 +653,16 @@ $gutter: 32px;
   background-color: $primary-500;
 }
 
-
 .w-30 {
   width: 30%;
+}
+
+// Lista de Presentes
+
+.a-noLink {
+  cursor: text !important;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
