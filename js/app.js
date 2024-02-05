@@ -110,8 +110,11 @@ function configurarFormulario() {
 
   form.addEventListener("submit", function (event) {
     let form = document.querySelector("form");
+    console.log("apertou botao");
 
     form.addEventListener("submit", function (event) {
+      alert("Obrigado por confirmar sua presença!");
+
       let nome = document.getElementById("nome").value;
       let quantidadeAdultos =
         document.getElementById("quantidade_adultos").value;
@@ -156,3 +159,9 @@ function configurarFormulario() {
   });
 }
 document.addEventListener("DOMContentLoaded", configurarFormulario);
+
+// Mensagem de confirmação de presença.
+const alert_sucesso = document.getElementById("sucesso");
+alert_sucesso.addEventListener("click", () => {
+  alert("Obrigado por confirmar sua presença!");
+});
