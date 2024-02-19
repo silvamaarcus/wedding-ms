@@ -165,3 +165,18 @@ const alert_sucesso = document.getElementById("sucesso");
 alert_sucesso.addEventListener("click", () => {
   alert("Obrigado por confirmar sua presença!");
 });
+
+// Contador de visitasno site
+
+// Verifica se já existe um contador de visitas no localStorage
+if(localStorage.getItem('visitCount')) {
+  // Se existir, recupera e incrementa
+  var count = parseInt(localStorage.getItem('visitCount')) + 1;
+  localStorage.setItem('visitCount', count);
+} else {
+  // Se não existir, inicializa com 1
+  localStorage.setItem('visitCount', 1);
+}
+
+// Exibe o contador no console
+console.log('Esta página foi visitada ' + localStorage.getItem('visitCount') + ' vezes.');
