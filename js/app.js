@@ -166,7 +166,7 @@ alert_sucesso.addEventListener("click", () => {
   alert("Obrigado por confirmar sua presença!");
 });
 
-// Contador de visitasno site
+// Contador de visitas no site
 
 // Verifica se já existe um contador de visitas no localStorage
 if(localStorage.getItem('visitCount')) {
