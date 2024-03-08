@@ -2231,7 +2231,7 @@ option {
   }
 }
 
-.button-next-p {
+.button-next {
   position: absolute;
   right: 32px;
   top: 24px;
@@ -2243,7 +2243,7 @@ option {
   background-position: center center;
 }
 
-.button-prev-p {
+.button-prev {
   position: absolute;
   right: 88px;
   top: 24px;
@@ -2256,27 +2256,7 @@ option {
   transform: rotate(180deg);
 }
 
-.button-next-s {
-  position: absolute;
-  right: 32px;
-  top: 24px;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  background-image: url("../svg/icon-arrow-s.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.button-prev-s {
-  position: absolute;
-  right: 88px;
-  top: 24px;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  background-image: url("../svg/icon-arrow-s.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  transform: rotate(180deg);
+.button-next,
+.button-prev {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
