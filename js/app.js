@@ -169,14 +169,22 @@ alert_sucesso.addEventListener("click", () => {
 // Contador de visitas no site
 
 // Verifica se já existe um contador de visitas no localStorage
-if(localStorage.getItem('visitCount')) {
+if (localStorage.getItem("visitCount")) {
   // Se existir, recupera e incrementa
-  var count = parseInt(localStorage.getItem('visitCount')) + 1;
-  localStorage.setItem('visitCount', count);
+  var count = parseInt(localStorage.getItem("visitCount")) + 1;
+  localStorage.setItem("visitCount", count);
 } else {
   // Se não existir, inicializa com 1
-  localStorage.setItem('visitCount', 1);
+  localStorage.setItem("visitCount", 1);
 }
 
 // Exibe o contador no console
-console.log('Esta página foi visitada ' + localStorage.getItem('visitCount') + ' vezes.');
+console.log(
+  "Esta página foi visitada " + localStorage.getItem("visitCount") + " vezes."
+);
+
+// Forçar play no video da intro
+document.addEventListener("DOMContentLoaded", function () {
+  var meuVideo = document.getElementById("video_intro");
+  meuVideo.play();
+});
