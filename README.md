@@ -4,16 +4,18 @@ Este é um projeto especial que desenvolvi para o meu próprio casamento! O site
 
 ## 🚀 Tecnologias Utilizadas
 
-HTML, CSS e JavaScript para a estrutura, estilo e interatividade do site.
-SheetMonkey como solução externa para a confirmação de presença dos convidados, facilitando o registro das respostas diretamente em uma planilha online.
+- HTML para a estrutura do site.
+- SCSS (Sass) + CSS para um estilo mais organizado e reutilizável.
+- JavaScript para funcionalidades interativas.
+- SheetMonkey para a confirmação de presença (RSVP), integrando os dados diretamente com uma planilha online.
 
 ## 🎨 Principais Funcionalidades:
 
-✅ Informações sobre o evento – Data, horário e local da cerimônia e recepção.
-✅ Galeria de fotos – Momentos especiais do casal em destaque.
-✅ Lista de presentes – Sugestões organizadas de forma prática.
-✅ Confirmação de presença (RSVP) – Integração com SheetMonkey para coletar respostas automaticamente.
-✅ Design Responsivo – O site se adapta a diferentes tamanhos de tela para uma ótima experiência em qualquer dispositivo.
+✅ Informações sobre o evento – Data, horário e local da cerimônia e recepção; <br>
+✅ Galeria de fotos – Momentos especiais do casal em destaque;<br>
+✅ Lista de presentes – Sugestões organizadas de forma prática;<br>
+✅ Confirmação de presença (RSVP) – Integração com SheetMonkey para coletar respostas automaticamente;<br>
+✅ Design Responsivo – O site se adapta a diferentes tamanhos de tela para uma ótima experiência em qualquer dispositivo;
 
 ## 💡 Destaques do Projeto
 
